@@ -12,6 +12,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "basic-auth": "^2.0.1",
     "unleash-server": "^3.2.24"
   }
 }
