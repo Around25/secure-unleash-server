@@ -1,7 +1,7 @@
 const unleash = require('unleash-server');
 const auth = require('./auth-hooks');
 const clientAuth = require('./client-hooks');
-const DATABASE_URL = process.env.DATABASE_URL || "postgres://postgres:s@defaultdb:5432/unleash";
+const DATABASE_URL = process.env.DATABASE_URL || "postgres://postgres:@defaultdb:5432/unleash";
 const SESSION_SECRET = process.env.SESSION_SECRET || "";
 const PORT = process.env.PORT || "80";
 
