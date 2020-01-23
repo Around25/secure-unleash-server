@@ -22,7 +22,7 @@ let options = {
   adminAuthentication: 'custom',
   enableLegacyRoutes: false,
   preRouterHook: app => {
-    hook(clientAuth(app)); // add client checks first then admin checks
+    hook(clientAuth.sharedSecret(app)); // add client checks first then admin checks
   },
   port: PORT,
 };
